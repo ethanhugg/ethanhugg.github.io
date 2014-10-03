@@ -286,7 +286,7 @@
 
     var myrequest = { audio: true };
     if (!(audio_only.checked)) {
-      myrequest = { video: {mozMediaSource: "window", mediaSource: "window"} };
+      myrequest = { audio: true, video: {mozMediaSource: "window", mediaSource: "window"} };
     }
 
     myrequest_reverse = copy_dictionary(myrequest);
